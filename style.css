@@ -1,0 +1,226 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d09ff8;
+    color: #421369;
+    margin: 0;
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+
+.container-site {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #421369;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #9340ca;
+    border-bottom: 2px solid #7b03aa;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.samira-card {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    background-color: #ffffff;
+    border: 2px solid #c9a0e9;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(66, 19, 105, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.samira-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(66, 19, 105, 0.25);
+}
+
+.samira-card-img {
+    width: 100%;
+    height: 100%;
+    min-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.samira-card .card-body {
+    padding: 22px;
+}
+
+.samira-card .card-title {
+    color: #9340ca;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid #7b03aa;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.samira-card .card-text {
+    color: #421369;
+    line-height: 1.7;
+}
+
+.samira-card-info {
+    color: #9340ca;
+    font-weight: bold;
+}
+
+.sites-list {
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sites-list li {
+    background-color: #ffffff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.sites-list li:hover {
+    transform: translateY(-5px);
+}
+
+.sites-list a {
+    display: block;
+}
+
+.sites-list img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+}
+
+.table-responsive {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-bottom: 0;
+}
+
+th {
+    background-color: #a261c0;
+    color: #ffffff;
+    padding: 14px;
+    text-align: center;
+}
+
+td {
+    color: #421369;
+    padding: 14px;
+    border-bottom: 1px solid #f0d4de;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #fff0f5;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .samira-card {
+        max-width: 540px;
+    }
+
+    .samira-card-img {
+        height: 230px;
+        min-height: 230px;
+    }
+
+    .sites-list {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .samira-card .card-body {
+        padding: 16px;
+    }
+
+    .samira-card .card-title {
+        font-size: 21px;
+    }
+
+    .samira-card-img {
+        height: 200px;
+        min-height: 200px;
+    }
+
+    .sites-list {
+        gap: 10px;
+    }
+
+    .sites-list li {
+        padding: 10px;
+    }
+
+    .sites-list img {
+        width: 55px;
+        height: 55px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
